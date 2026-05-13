@@ -3,15 +3,32 @@
 	<head>
 		<title>Fancify Shamcify</title>
 
-		<!-- link to your script file here -->
+		<script src="fancifymytext.js"></script>
 		
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
-		
+		<fieldset>
 
-		<!-- Your UI controls go here -->
+			<legend>Text</legend>
+
+			<textarea id="text" name="message" rows="4" cols="30"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Fancify</legend>
+			<button id="bigbtn" onclick="makeBigger()">Bigger!</button>
+
+			<input type="radio" id="fancy" name="FancicyText" value="fancy" onchange="fancyShmancy()">
+			<label for="fancy">FancyShmancy</label>
+
+			<input type="radio" id="boring" name="FancicyText" value="borning" onchange="boringBetty()">
+			<label for="boring">BoringBetty</label>
+
+			<button id="moobtn" onclick="moo()">Moo</button>
+
+		</fieldset>
 		
 	</body>
 </html>
